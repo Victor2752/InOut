@@ -1,78 +1,108 @@
 .container{
-    position: absolute;
+    width: 100%;
+    height: 100;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    
+    justify-content: center;
 }
 
-.mainL {
-    width: 50vw;
+.container right{
+    width: 50%;
     height: 100vh;
+
+    display: flex;
+    align-items: center;
     justify-content: center;
+
+    background: #1a91da;
+}
+
+.container left{
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: right;
+    align-content:space-around;
+
     background: #EFEFEF;
-    box-shadow: 20px 0px 15px rgba(0, 0, 0, 0.25);
 }
 
-.mainR {
-    width: 50vw;
-    height: 100vh;
-    justify-content: center;
-    background: linear-gradient(
-        180deg, 
-        #1A91DA 70.31%, 
-        rgba(
-            26,
-            145, 
-            218, 
-            0
-        ) 100%
-    );
+.boxL {
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: transparent;
+}
+
+.boxL b1{
+    width: 70%;
+    max-width: 450px;
+    margin: 2%;
+    padding: 1.5%;
+
+    font-size: 200%;
+    border: 3px solid #cccccc;
+    box-sizing: border-box;
+    box-shadow: -15px 15px 4px #bbbccc;
+}
+
+.boxL b2{
+    width: 70%;
+    max-width: 450px;
+    margin: 2%;
+    padding: 1.5%;
+
+    text-align: right;
+    font-size: 200%;
+    border: 3px solid #cccccc;
+    box-sizing: border-box;
+    box-shadow: 15px 15px 4px #bbbccc;
 }
 
 .boxR {
-    margin: 3rem;
-    padding: 1.5rem;
-    padding-block: 2rem;
-    text-align: center;
+    width: 85%;
+    max-width: 640px;
+    height: 95%;
+    max-height: 920px;
+    margin: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     background: #FFFFFF;
-    box-shadow: 15px 15px 25px -2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
 
-.titleR {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 4rem;
-}
-
-.loginBox{
-    margin: 1rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mailBox {
-    margin: 0.5rem;
-    font-size: 1rem;
+.Box {
+    width: 100%;
+    height: 4vh;
+    max-height: 40px;
+    margin: 0.5vw;
+    font-size: 100%;
     color: #000;
-    background-color: #eeeeee;
-    border-radius: 3px;
+    background-color: #dddddd;
+    border-style: none;
+    border-radius: 5px;
 }
 
-.passwordBox {
-    margin: 0.5rem;
-    font-size: 1rem;
-    color: #000;
-    background-color: #eeeeee;
-    border-radius: 3px;
-}
+
 
 .btnEntra{
-    padding-block: 0.5rem;
-    padding-inline: 5rem;
+    width: 100%;
+    padding: 0.5vw;
+    font-size: 100%;
+
     color: #ffffff;
     background: #1A91DA;
     border: 1px solid #FFFFFF;
@@ -81,6 +111,8 @@
 }
 
 .link{
+    justify-self: center;
+    font-size: 100%;
     color: #0070f3;
 }
 
@@ -89,3 +121,31 @@
 .link :active {
     text-decoration: underline;
 }
+
+@media (max-width: 780px) {
+    .container {
+      flex-direction: column;
+    }
+    .container left{
+        width: 100%;
+        height: 90vh;
+        padding-block: 20px;
+    }
+    .container right{
+        width: 100%;
+        height: 60vh;
+        padding-block: 20px;
+    }
+    .boxL{
+        height: 100%;
+
+    }
+    .boxR{
+        height: 100%;
+        margin: 5%;
+    }
+    .Box{
+        margin: 4%;
+        padding: 2%;
+    }
+  }
