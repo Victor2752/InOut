@@ -25,9 +25,9 @@ function Login() {
             </left>
             <right>
                 <div className={styles.boxR}>
-                    <h2>
+                    <h1>
                         sign-in
-                    </h2>
+                    </h1>
                     <div className={styles.boxR}>
                         <input type='text' value='E-mail' className={styles.Box} />
                         <input type='text' value='Senha' className={styles.Box} />
