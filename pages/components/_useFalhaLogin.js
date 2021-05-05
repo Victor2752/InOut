@@ -1,6 +1,6 @@
 import styles from '../../styles/Login.module.css'
 
-export default function LoginBox() {
+export default function UseFalhaLogin() {
     return(
         <right>
         <div className={styles.boxR}>
@@ -14,8 +14,8 @@ export default function LoginBox() {
                     enviar E-mail de recuperação
                 </button>
             </div>
-            <a href="/" className={styles.link}>
-                <p>login &rarr;</p>
+            <a href="/login" className={styles.link}>
+                <p>tentar login novamente &rarr;</p>
             </a>
         </div>
     </right>

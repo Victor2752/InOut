@@ -1,15 +1,15 @@
 import styles from '../styles/Login.module.css'
 
 import Loginleft from './components/_loginleft'
-import LoginBox from './components/_loginBox'
+import UseFalhaLogin from './components/_useFalhaLogin'
 
-function Login() {
+function FalhaLogin() {
     return (
         <div className={styles.container}>
             <Loginleft />
-            <LoginBox />
+            <UseFalhaLogin />
         </div>
     )
 }
 
-export default Login;
+export default FalhaLogin;

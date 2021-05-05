@@ -14,7 +14,7 @@ export default function LoginBox() {
                     Entrar
                     </button>
             </div>
-            <a href="/" className={styles.link}>
+            <a href="/falha-login" className={styles.link}>
                 <p>esqueceu a senha? &rarr;</p>
             </a>
         </div>
