@@ -1,6 +1,6 @@
 import styles from '../../styles/Login.module.css'
 
-export default function UseFalhaLogin() {
+function UseFalhaLogin() {
     return(
         <right>
         <div className={styles.boxR}>
@@ -21,3 +21,5 @@ export default function UseFalhaLogin() {
     </right>
     )
 }
+
+export default UseFalhaLogin;
