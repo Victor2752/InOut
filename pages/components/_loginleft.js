@@ -1,6 +1,6 @@
 import styles from '../../styles/Login.module.css'
 
-function Loginleft() {
+export default function Loginleft() {
     return(
         <left>
         <div className={styles.boxL}>
@@ -23,5 +23,3 @@ function Loginleft() {
     </left>
     )
 }
-
-export default Loginleft;
