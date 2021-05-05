@@ -2,7 +2,7 @@
 import styles from '../styles/Login.module.css'
 
 import Loginleft from './components/_loginleft'
-import LoginBox from './components/_loginRight'
+import RecuperaSenha from './components/_recuperarConta'
 
 
 
@@ -10,7 +10,7 @@ function Login() {
     return (
         <div className={styles.container}>
             <Loginleft />
-            <LoginBox />
+            <RecuperaSenha />
         </div>
     )
 }

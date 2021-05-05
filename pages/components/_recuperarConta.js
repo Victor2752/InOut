@@ -1,6 +1,8 @@
+import { LoginSenhaLink } from './_links'
+
 import styles from '../../styles/Login.module.css'
 
-export default function LoginBox() {
+export default function RecuperaSenha() {
     return(
         <right>
         <div className={styles.boxR}>
@@ -14,9 +16,7 @@ export default function LoginBox() {
                     enviar E-mail de recuperação
                 </button>
             </div>
-            <a href="/" className={styles.link}>
-                <p>login &rarr;</p>
-            </a>
+            <LoginSenhaLink />
         </div>
     </right>
     )

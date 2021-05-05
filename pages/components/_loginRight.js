@@ -1,3 +1,5 @@
+import { EsqueceuSenhaLink } from './_links'
+
 import styles from '../../styles/Login.module.css'
 
 export default function LoginBox() {
@@ -14,9 +16,7 @@ export default function LoginBox() {
                     Entrar
                     </button>
             </div>
-            <a href="/" className={styles.link}>
-                <p>esqueceu a senha? &rarr;</p>
-            </a>
+            <EsqueceuSenhaLink />
         </div>
     </right>
     )
