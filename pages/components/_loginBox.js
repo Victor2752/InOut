@@ -12,7 +12,7 @@ export default function LoginBox() {
                 <input type='text' value='Senha' className={styles.Box} />
                 <button className={styles.btnEntra}>
                     Entrar
-                    </button>
+                </button>
             </div>
             <a href="/falha-login" className={styles.link}>
                 <p>esqueceu a senha? &rarr;</p>
